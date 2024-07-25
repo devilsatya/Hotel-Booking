@@ -1,0 +1,26 @@
+<% layout("/layouts/boilerplate")%>
+
+<div class="row mt-3">
+    <div class="col-6 offset-3">
+        <form action="/signup" method="POST" >
+            <div>
+                <label for="username" class="form-label">Username</label>
+                    <input type="text" id="username" placeholder="Enter name" name="username" class="form-control" required >
+                <div class="valid-feedback">LOOKS GOOD</div>
+            </div> 
+            <div>
+                <label for="email" class="form-label">Email</label>
+                    <input type="text"  id="email" placeholder="Enter name" name="email" class="form-control" required >
+                <div class="valid-feedback">LOOKS GOOD</div>
+            </div> 
+
+            <div>
+                <label for="password" class="form-label">password</label>
+                    <input type="text" id="password" placeholder="Enter password" name="password" class="form-control" required >
+                <div class="valid-feedback">LOOKS GOOD</div>
+            </div> 
+
+           <button class="btn btn-success">signup</button>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,21 @@
+<% layout("/layouts/boilerplate")%>
+<form action="/login" method="POST" >
+<div class="row mt-3">
+    <div class="col-6 offset-3">>
+            <div>
+                <label for="username" class="form-label">Username</label>
+                    <input type="text" id="username" placeholder="Enter name" name="username" class="form-control" required >
+                <div class="valid-feedback">LOOKS GOOD</div>
+            </div> 
+          
+
+            <div>
+                <label for="password" class="form-label">password</label>
+                    <input type="text" id="password" placeholder="Enter password" name="password" class="form-control" required >
+                <div class="valid-feedback">LOOKS GOOD</div>
+            </div> 
+            <button class="btn btn-success">login</button>
+           
+        </form>
+    </div>
+</div>

@@ -1,0 +1,109 @@
+*{
+    font-family: 'Montserrat', sans-serif !important;
+    font-family: 'Plus Jakarta Sans', sans-serif !important;
+    
+
+}
+body{
+    
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+   
+}
+.navbar{
+    height:5rem;
+    background-color: white;
+}
+.fa-compass
+{
+    color:#fe424d;
+    font-size:2rem;
+}
+.nav-link{
+    color:#222222 !important;
+}
+.f-info-links a{
+    text-decoration: none;
+    color:#222222;
+}
+.f-info-links a:hover{
+    text-decoration:underline;
+    
+}
+.f-info-links,.f-info-brand,.f-info-socials{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    vertical-align: middle;
+
+}
+.f-info-socials i{
+    font-size: 1.2rem;
+    margin-right: 1rem;
+}
+.f-info{
+    height: 8rem;
+    background-color: #ebebeb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: space-evenly;
+
+}
+.card{
+    border: none !important;
+    margin-bottom:2rem ;
+    height: 400px;
+}
+.card-img-top{
+    border-radius: 1rem !important;
+    object-fit: cover !important;
+    width:100% !important;
+}
+.card-body {
+    padding: 0 !important;
+
+}
+.card-title p{
+    font-weight: 400;
+}
+.card-title h5{
+    font-weight: 400;
+}
+.links{
+    text-decoration: none;
+}
+.card-img-overlay{
+    opacity: 0;
+    
+}
+.card-img-overlay:hover{
+    background-color: white;
+    opacity: 0.2;
+}
+.container{
+ flex:1;
+}
+.addb{
+    background-color: #fe424d;
+}
+
+.btl a{
+    text-decoration: none;
+    color:white;
+   
+}
+.btl{
+    background-color: #fe424d;
+}
+.line{
+    display: flex;
+    align-items: space-evenly;
+    margin-left: 9px;
+}
+.line .btn{
+    margin-left: 19px;
+}
+

@@ -1,0 +1,43 @@
+<% layout("/layouts/boilerplate")%>
+<body>
+   
+
+        
+    <div style="margin-left: 240px;">
+        <form method="post" action="/listings/<%=listing._id%>?_method=PUT" style="margin:20px;width:750px;">
+        <div>
+            <label for="title" class="form-label">Title</label>
+        <input type="text"  value ="<%=listing.title%>" name="listing[title]" class="form-control"></inype>
+        </div>   
+        <div >
+    <label for="desription" class="form-label">Description</label>
+    <textarea class="form-control" name="listing[description]"><%=listing.description%></textarea>
+</div>
+<div >
+    <label for="image" class="form-label">Image</label>
+    <input type="text" class="form-control" value=<%=listing.image%>  name="listing[image]">
+    
+</div>
+<div >
+    <label for="price" class="form-label">price</label>
+    <input type="text" class="form-control" value=<%=listing.price%> name="listing[price]">
+    
+</div>
+<div >
+    <label for="location" class="form-label">Location</label>
+    <input type="text" class="form-control" value=<%=listing.location%> name="listing[location]">
+    
+</div>
+<div >
+    <label for="Country" class="form-label">Country</label>
+    <input type="text" class="form-control" value=<%=listing.country%> name="listing[country]">
+    
+</div>
+<br>
+   
+         
+            <input type="submit" value="submit" style="border:none;background-color: #fe424d;border-radius: 1rem;padding:0.4rem ;margin-left: 5px;"> 
+    </form>
+
+</div>
+</body>

@@ -1,0 +1,44 @@
+<% layout("/layouts/boilerplate")%>
+<body>
+
+
+        <div style="margin-left: 240px;">
+    <form method="post" action="/listings" style="margin:20px;width:750px;" class="needs-validation" enctype="multipart/form-data">
+        <div>
+            <label for="title" class="form-label">Title</label>
+                <input type="text" placeholder="title" name="listing[title]" class="form-control" required >
+        
+        </div>   
+        <div >
+    <label for="desription" class="form-label">Description</label>
+    <textarea  name="listing[description]"class="form-control" required ></textarea>
+</div>
+<div >
+    <label for="image" class="form-label">Image</label>
+    <input  class="form-control"  name="listing[image]" type="file">
+    
+</div>
+<div class="cols-md-3">
+    <label for="price" class="form-label">price</label>
+    <input type="text" class="form-control" name="listing[price]" required >
+    
+</div>
+<div >
+    <label for="location" class="form-label">Location</label>
+    <input type="text" class="form-control" name="listing[location]" required >
+    
+</div>
+<div >
+    <label for="Country" class="form-label">Country</label>
+    <input type="text" class="form-control" name="listing[country]" required >
+    
+</div>
+<br>
+<button class="btn  addb">Add</button> 
+ </form>
+
+</div>
+
+
+    
+</body>

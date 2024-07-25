@@ -1,0 +1,27 @@
+<% layout("/layouts/boilerplate")%>
+<body>
+   
+    <div style="margin-left:280px;">
+    <h3>Listing</h3>
+    <div style="margin-bottom: 50px;">
+        <img src="<%=listin.image%>" style="width: 500px;height: 500px">
+    
+    <ol style="list-style-type: none;line-height: 30px; margin-left: -40px;">
+       <b> <li><%=listin.title%></li></b>
+        <li><%=listin.description%></li>
+        <li>&#8377;<%=listin.price%></li>
+        <li><%=listin.location%></li>
+        <li><%=listin.country%></li>
+    </ol>
+    <div class="line">
+     <button class="btn  btl"><a href="/listings/<%=listin._id%>/edit">edit</a></button>
+
+     <form method="post" action="/listings/<%=listin._id%>?_method=DELETE">
+     <button class="btn btn-dark">delete</button>
+     </form>
+
+    </div>
+    </div>
+    </div>
+    
+</body>
